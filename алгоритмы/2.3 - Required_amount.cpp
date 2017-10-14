@@ -1,6 +1,9 @@
 /*
  *  Автор: Роман Кошелев  #8134076736
  * 
+ *  Compilation: clang++ Required_amount.cpp -O2 -std=c++11 -Weverything -Wno-missing-prototypes 
+ *                                           -Wno-c++98-compat -Werror -Wno-sign-conversion
+ *
  *  Нужная сумма
  *  
  *  Даны два строго возрастающих массива целых чисел A[0..n) и B[0..m) и число k.
@@ -22,8 +25,8 @@
 
 std::size_t countInd(std::size_t lenA, int *masA, std::size_t lenB, int *masB, int k)
 {
-	std::size_t	counter = 0;
-	std::ptrdiff_t j = 0;
+	std::size_t counter = 0;
+	std::size_t j = 0;
 
 	for (std::ptrdiff_t i = lenB - 1; i >= 0; --i) 
 	{
