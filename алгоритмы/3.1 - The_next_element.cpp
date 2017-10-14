@@ -44,7 +44,7 @@ std::size_t BinarySearch(int *mas, std::size_t left, std::size_t right, int num)
 
 std::size_t Search(int *mas, std::size_t count, int num)
 {
-	int i;
+	std::size_t i;
 	for (i = 1; i*i < count; ++i) {
 		if (mas[i*i] >= num) {
 			return BinarySearch(mas, (i - 1)*(i - 1), i*i, num);
