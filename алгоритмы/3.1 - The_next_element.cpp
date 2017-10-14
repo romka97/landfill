@@ -1,6 +1,7 @@
 /*
  *  Автор: Роман Кошелев  #8134076736
  *  
+ *  Compilation: clang++ The_next_element.cpp -O2 -std=c++11 -Weverything -Wno-missing-prototypes -Wno-c++98-compat -Werror
  *  
  *  Следующий элемент
  *  
