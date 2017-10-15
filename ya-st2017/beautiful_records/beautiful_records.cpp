@@ -2,7 +2,7 @@
  *  Автор: Роман Кошелев  #8134076736
  *
  *  Compilation: clang++ beautiful_records.cpp -O2 -std=c++11 -Weverything -Wno-missing-prototypes -Wno-c++98-compat -Werror 
- *			       -Wno-sign-conversion -Wno-conversion
+ *			                       -Wno-sign-conversion -Wno-conversion
  *  
  *  
  *  Красивые записи
@@ -18,7 +18,8 @@ std::string pre(std::string &str_prim)
 	std::string  str_ult;
 	str_ult.reserve(str_prim.size());
 	bool flag1 = true, flag2 = true;
-	for (unsigned char n : str_prim) {
+	for (unsigned char n : str_prim) 
+	{
 		if (isalpha(n))
 		{
 			if (flag2) {
