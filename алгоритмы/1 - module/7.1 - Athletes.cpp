@@ -21,11 +21,11 @@
 #include <algorithm>
 #include <cstdlib>
 
-size_t calculate(std::pair<int, int> *mas, std::size_t sizeMas)
+std::size_t calculate(std::pair<int, int> *mas, std::size_t sizeMas)
 {
 	int sumMas = mas[0].second;
-	size_t count = 1;
-	for (size_t i = 1; i < sizeMas; ++i)
+	std::size_t count = 1;
+	for (std::size_t i = 1; i < sizeMas; ++i)
 	{
 		if (mas[i].first >= sumMas) {
 			sumMas += mas[i].second;
