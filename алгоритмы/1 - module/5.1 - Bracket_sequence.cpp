@@ -101,8 +101,8 @@ bool test(char *str)
 				const char temp = right.top();
 				right.pop();
 				if ((c == ')' && temp != '(') ||
-					(c == ']' && temp != '[') ||
-					(c == '}' && temp != '{'))
+				    (c == ']' && temp != '[') ||
+				    (c == '}' && temp != '{'))
 				{
 					return false;
 				}
